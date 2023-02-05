@@ -1,0 +1,78 @@
+
+-v v test.txt
+-c v test.txt
+-v nec test.txt
+-c nec test.txt
+-v 123 test.txt
+-c 123 test.txt
+-v asd test.txt
+-c asd test.txt
+-v v test1.txt
+-c v test1.txt
+-v nec test1.txt
+-c nec test1.txt
+-v 123 test1.txt
+-c 123 test1.txt
+-v asd test1.txt
+-c asd test1.txt
+-v v test.txt test1.txt
+-c v test.txt test1.txt
+-v nec test.txt test1.txt
+-c nec test.txt test1.txt
+-v 123 test.txt test1.txt
+-c 123 test.txt test1.txt
+-v asd test.txt test1.txt
+-c asd test.txt test1.txt
+-i -v v test.txt
+-i -c v test.txt
+-v -i v test.txt
+-v -v v test.txt
+-v -c v test.txt
+-v -l v test.txt
+-v -n v test.txt
+-v -h v test.txt
+-v -s v test.txt
+-c -i v test.txt
+-c -v v test.txt
+-c -c v test.txt
+-c -n v test.txt
+-c -h v test.txt
+-c -s v test.txt
+-c -o v test.txt
+-l -v v test.txt
+-n -v v test.txt
+-n -c v test.txt
+-h -v v test.txt
+-h -c v test.txt
+-s -v v test.txt
+-s -c v test.txt
+-o -c v test.txt
+-i -v nec test.txt
+-i -c nec test.txt
+-v -i nec test.txt
+-v -v nec test.txt
+-v -c nec test.txt
+-v -l nec test.txt
+-v -n nec test.txt
+-v -h nec test.txt
+-v -s nec test.txt
+-c -i nec test.txt
+-c -v nec test.txt
+-c -c nec test.txt
+-c -n nec test.txt
+-c -h nec test.txt
+-c -s nec test.txt
+-c -o nec test.txt
+-l -v nec test.txt
+-n -v nec test.txt
+-n -c nec test.txt
+-h -v nec test.txt
+-h -c nec test.txt
+-s -v nec test.txt
+-s -c nec test.txt
+-o -c nec test.txt
+-i -v 123 test.txt
+-i -c 123 test.txt
+-v -i 123 test.txt
+-v -v 123 test.txt
+-v -c 123 test.txt

@@ -1,0 +1,30 @@
+==46098== Memcheck, a memory error detector
+==46098== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==46098== Using Valgrind-3.18.1 and LibVEX; rerun with -h for copyright info
+==46098== Command: ./s21_cat -e no_file.txt
+==46098== Parent PID: 45980
+==46098== 
+==46098== 
+==46098== Process terminating with default action of signal 2 (SIGINT)
+==46098==    at 0x49850F8: tcgetattr (tcgetattr.c:38)
+==46098==    by 0x49810FF: isatty (isatty.c:27)
+==46098==    by 0x48E9CD2: local_isatty (filedoalloc.c:69)
+==46098==    by 0x48E9CD2: _IO_file_doallocate (filedoalloc.c:93)
+==46098==    by 0x48F8D5F: _IO_doallocbuf (genops.c:347)
+==46098==    by 0x48F7FDF: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:744)
+==46098==    by 0x48F6754: _IO_new_file_xsputn (fileops.c:1243)
+==46098==    by 0x48F6754: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1196)
+==46098==    by 0x48E0D28: outstring_func (vfprintf-internal.c:239)
+==46098==    by 0x48E0D28: __vfprintf_internal (vfprintf-internal.c:1516)
+==46098==    by 0x48CB81E: printf (printf.c:33)
+==46098==    by 0x1095AB: reader (in /home/user/C3_SimpleBashUtils-1/src/cat/s21_cat)
+==46098==    by 0x1092DA: main (in /home/user/C3_SimpleBashUtils-1/src/cat/s21_cat)
+==46098== 
+==46098== HEAP SUMMARY:
+==46098==     in use at exit: 0 bytes in 0 blocks
+==46098==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated
+==46098== 
+==46098== All heap blocks were freed -- no leaks are possible
+==46098== 
+==46098== For lists of detected and suppressed errors, rerun with: -s
+==46098== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)
